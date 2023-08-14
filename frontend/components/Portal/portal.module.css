@@ -1,0 +1,38 @@
+.dialog {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.infoContainer {
+    height: 5rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.addButton {
+    height: 2rem;
+    width: 4rem;
+    margin-left: 3rem;
+    background-color: #3f45f7;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+}
+
+.addButton:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,44 @@
+.dialog {
+    position: fixed;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: -80px;
+    bottom: 0;
+    pointer-events: none;
+    animation: fadeInAnimation ease-in-out 2s;
+    animation-iteration-count: 1;
+    color: rgba(156, 43, 221, 0.528);
+}
+
+.text {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@keyframes fadeInAnimation {
+
+    0% {
+
+        opacity: 0;
+
+    }
+
+
+    50% {
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+    }
+
+}

@@ -1,0 +1,332 @@
+.navigator {
+    background-color: #871165;
+    height: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.flexBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 40px;
+    margin: 0;
+    list-style: none;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.li {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.li:hover {
+    box-shadow: 0 0 3px 3px #520b3e;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Preset - start */
+.presetBox {
+    background-color: white;
+    margin: 1.5rem 1rem 0 1rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+}
+
+/* PresetAndButton */
+.gridBox {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+}
+
+.title1 {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+/* PresetTextArea */
+.textAreaBox {
+    background-color: #fbeec4;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+}
+
+.textAreaUl {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+}
+
+.textAreaLi {
+    background-color: #e57a7f;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.disabledTextAreaLi {
+    background-color: #b5b5b5;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+.textAreaLi:hover {
+    background-color: #4cc9f0;
+    -webkit-box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+    -moz-box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+    box-shadow: 10px 10px 99px 6px rgba(76, 201, 240, 1);
+    cursor: pointer;
+    /* animation: animateListItem 0.5s ease-in-out; */
+}
+
+.disabledTextAreaLi:hover {
+    background-color: #7c7c7c;
+    -webkit-box-shadow: 10px 10px 99px 6px rgb(148, 148, 148);
+    -moz-box-shadow: 10px 10px 99px 6px rgba(148, 148, 148, 1);
+    box-shadow: 10px 10px 99px 6px rgba(148, 148, 148, 1);
+    cursor: pointer;
+    /* animation: animateListItem 0.5s ease-in-out; */
+}
+
+/* 
+@keyframes animateListItem {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(45deg) scale(1.5);
+    }
+
+    75% {
+        transform: rotate(-45deg) scale(1.5);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+} */
+
+/* Preset - ends */
+
+/* GenerateDiary - start */
+.generatorContainer {
+    background-color: white;
+    margin: 1.5rem 1rem 0 1rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+}
+
+.generatorGridBox {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    margin-bottom: 1.5rem;
+}
+
+.startGenerateButton {
+    width: 8rem;
+    height: 3rem;
+    padding: 0;
+}
+
+.checkBoxContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-left: 2rem;
+    background-color: #a7d1fb7b;
+    padding-left: 1rem;
+    border-radius: 0.7rem;
+}
+
+.checkBoxContainer:hover {
+    color: #113a81;
+}
+
+.checkBox {
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.checkBoxLabel {
+    cursor: pointer;
+}
+
+.listContainer {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0;
+    margin: 0;
+}
+
+.dateAndCopyButtonContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.6rem
+}
+
+.copyButton {
+    width: 4rem;
+    height: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.copyButton:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.textareaStyle {
+    resize: none;
+    border-color: #c72a9a;
+    border-width: 3px;
+    border-radius: 10px;
+    animation: TestareaAnimation 4s linear infinite;
+}
+
+@keyframes TestareaAnimation {
+    0% {
+        border-color: #c72a9a;
+    }
+
+    25% {
+        border-color: #512ac7;
+    }
+
+    50% {
+        border-color: #2abac7;
+    }
+
+    75% {
+        border-color: #512ac7;
+    }
+
+    100% {
+        border-color: #c72a9a;
+    }
+}
+
+/* GenerateDiary - end */
+
+.button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 3rem;
+    width: 8rem;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+}
+
+.buttonspan {
+    color: #164ca7;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+}
+
+.button:hover {
+    animation: rotate 0.7s ease-in-out both;
+}
+
+.button:active {
+    background-color: #a6d1fb;
+}
+
+
+.buttonspan:hover {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
